@@ -1,0 +1,159 @@
+_type: export
+__export_format: 4
+__export_date: 2019-10-20T23:22:17.814Z
+__export_source: insomnia.desktop.app:v7.0.3
+resources:
+  - _id: req_005b4fcbbf534bd68589fb228859c347
+    authentication: {}
+    body: {}
+    created: 1571613715982
+    description: ""
+    headers: []
+    isPrivate: false
+    metaSortKey: -1571613582546.125
+    method: DELETE
+    modified: 1571613715982
+    name: Delete Aluno
+    parameters: []
+    parentId: fld_fa1061f900604e57a83ac239a9dae413
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: https://localhost:5001/api/alunos/5daceb3f53f8fc3450886919
+    _type: request
+  - _id: fld_fa1061f900604e57a83ac239a9dae413
+    created: 1571613715912
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1571613617577
+    modified: 1571613716019
+    name: Alunos
+    parentId: wrk_832b63dceba24667bbd70ddf633362fb
+    _type: request_group
+  - _id: wrk_832b63dceba24667bbd70ddf633362fb
+    created: 1571527078826
+    description: ""
+    modified: 1571527078825
+    name: Insomnia
+    parentId: null
+    _type: workspace
+  - _id: req_fc5d374d60b342e0bb59434c4b810f2a
+    authentication: {}
+    body: {}
+    created: 1571613715997
+    description: ""
+    headers: []
+    isPrivate: false
+    metaSortKey: -1571613582496.125
+    method: GET
+    modified: 1571613715997
+    name: Get Aluno Por Id
+    parameters: []
+    parentId: fld_fa1061f900604e57a83ac239a9dae413
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: https://localhost:5001/api/alunos/5daceb3f53f8fc3450886919
+    _type: request
+  - _id: req_2320b4b3a6b54b01a2fa61c313e041a9
+    authentication: {}
+    body:
+      mimeType: application/json
+      text: |-
+        {
+            "id": "5daceb3f53f8fc3450886919",
+            "nome": "Aluno 1 - Update",
+            "email": "aluno1-update@faculdadeimpacta.com.br"
+        }
+    created: 1571613715964
+    description: ""
+    headers:
+      - id: pair_a670675f0243435a9d3445694c7b58cb
+        name: Content-Type
+        value: application/json
+    isPrivate: false
+    metaSortKey: -1571613582446.125
+    method: PUT
+    modified: 1571613715964
+    name: Update Aluno
+    parameters: []
+    parentId: fld_fa1061f900604e57a83ac239a9dae413
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: https://localhost:5001/api/alunos/5daceb3f53f8fc3450886919
+    _type: request
+  - _id: req_5dc593023227433bac88c0f00ee9851d
+    authentication: {}
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"nome": "Aluno 1",
+        	"email": "aluno1@faculdadeimpacta.com.br"
+        }
+    created: 1571613715946
+    description: ""
+    headers:
+      - id: pair_d62363541a994b13b9566c92cd572b96
+        name: Content-Type
+        value: application/json
+    isPrivate: false
+    metaSortKey: -1571613582396.125
+    method: POST
+    modified: 1571613715946
+    name: Create Aluno
+    parameters: []
+    parentId: fld_fa1061f900604e57a83ac239a9dae413
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: https://localhost:5001/api/alunos
+    _type: request
+  - _id: req_31184175d6b5455e86d2e9e0ec34e57e
+    authentication: {}
+    body: {}
+    created: 1571613715929
+    description: ""
+    headers: []
+    isPrivate: false
+    metaSortKey: -1571613582346.125
+    method: GET
+    modified: 1571613715929
+    name: Get Alunos
+    parameters: []
+    parentId: fld_fa1061f900604e57a83ac239a9dae413
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: https://localhost:5001/api/alunos
+    _type: request
+  - _id: env_7f3527ea80965a06126f1429c010d91e789910d7
+    color: null
+    created: 1571527079133
+    data: {}
+    dataPropertyOrder: null
+    isPrivate: false
+    metaSortKey: 1571527079133
+    modified: 1571527079133
+    name: Base Environment
+    parentId: wrk_832b63dceba24667bbd70ddf633362fb
+    _type: environment
+  - _id: jar_7f3527ea80965a06126f1429c010d91e789910d7
+    cookies: []
+    created: 1571527079152
+    modified: 1571527079152
+    name: Default Jar
+    parentId: wrk_832b63dceba24667bbd70ddf633362fb
+    _type: cookie_jar
